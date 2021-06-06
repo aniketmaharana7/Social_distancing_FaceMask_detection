@@ -1,0 +1,57 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Monitoring App</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--     <p style = "font-family:lato;font-size:25px;">-->
+<!--         Welcome to Social Distancing and Facemask Detction App-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        <form action="/facemask" method="post">-->
+<!--        <button type="submit">Facemask Detection</button>-->
+<!--        </form>-->
+<!--    </p>-->
+<!--    <p>-->
+<!--        <form action="/browsefile" method="post">-->
+<!--        <button type="submit">Social Distancing detection</button>-->
+<!--        </form>-->
+<!--    </p>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pandemic Monitoring App</title>
+    <link rel="stylesheet" type="text/css" href="static/home.css">
+</head>
+
+<body>
+
+        <div class="header">
+            <h1>Digital Pandemic Monitor</h1>
+        </div>
+        <div class="footer">
+            <h1>Stay safe  Stay home!</h1>
+        </div>
+        <div class="op">
+            <ul>
+               <li><a>Social distancing detection</a></li>
+                <li><b>Facemask detection</b></li>
+            </ul>
+
+        </div>
+
+        <div class="operation">
+
+            <form action="/social" method="POST"><button type="submit"><img src="static/social.png" alt="image" class="socialimg"></button></form>
+            <form action="/facemask" method="POST"><button type="submit"><img src="static/mask.png" alt="image" class="faceimg"></button></form>
+        </div>
+
+</body>
+</html>

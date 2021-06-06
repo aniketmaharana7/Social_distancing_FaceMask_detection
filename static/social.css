@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(196, 221, 243);
+}
+.title{
+    font-family: Impact;
+    font-size: 25px;
+    text-align:center;
+    color:rgb(4, 2, 116);
+}
+
+.Videoinput{
+    margin-top: 2cm;
+    text-align:center;
+}
+
+.mycam{
+    margin-top: 1cm;
+    text-align:center;
+}
+
+#start{
+    position: relative;
+    margin-top: 1cm;
+    padding:auto;
+    left: 45%;
+    
+}
+
+#stop{
+
+    position: relative;
+    padding: auto;
+    left:50% ;
+    
+}
+
+.footer{
+    font-family:Cambria;
+    font-style:italic;
+    font-size:10px;
+     position:fixed;
+    left: 0;
+    bottom:30px;
+    width: 100%;
+    text-align: center;
+    color:rgb(1, 36, 148) ;
+    background-color: rgb(177, 238, 177);
+
+
+}

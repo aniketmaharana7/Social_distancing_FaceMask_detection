@@ -1,0 +1,84 @@
+<!--<html>-->
+
+<!--  <head>-->
+<!--    <title>Video Surveillance</title>-->
+<!--  </head>-->
+
+<!--  <body>-->
+
+<!--    <p style = "font-family:lato;font-size:25px;">-->
+<!--         Social Distancing Detection-->
+<!--    </p>-->
+
+<!--    <img id="mycam" src="static/plot.png">-->
+
+<!--    <div>-->
+<!--      <button id ="start" onclick="start()">start</button>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <button id ="stop" onclick="stop()">stop</button>-->
+<!--    </div>-->
+
+
+<!--    <script>-->
+<!--      function stop(){-->
+<!--        var imag=document.getElementById('mycam');-->
+<!--        imag.src="static/social.png";-->
+<!--        // $("img").attr("src","static/plot.png");-->
+<!--      }-->
+<!--      function start(){-->
+<!--        var imag=document.getElementById('mycam');-->
+<!--        imag.src="{{ url_for('videofootage_feed') }}";-->
+
+<!--      }-->
+<!--    </script>-->
+<!--  </body>-->
+
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Video Surveillance</title>
+    <link rel="stylesheet" type="text/css " href="static/social.css">
+  </head>
+
+  <body>
+
+    <div class="title">
+        <h1>Social Distancing Detection</h1>
+    </div>
+    <div class="footer">
+            <h1>Stay safe  Stay home!</h1>
+        </div>
+    <div class="Videoinput">
+        <form action="/uploader" method="POST" enctype="multipart/form-data"><label for="myvideo">Choose a Video file</label>
+        <input type="file" name="video" id="myvideo">
+        <button type="submit">Upload</button>
+      </form>
+
+    </div>
+     <div class="mycam">
+      <img id="video" src="static/safe.png">
+    </div>
+
+<!--    <div >-->
+<!--      <button id ="start" onclick="start()">start</button>-->
+
+<!--      <button id ="stop" onclick="stop()">stop</button>-->
+<!--    </div>-->
+
+
+<!--    <script>-->
+<!--      function stop(){-->
+<!--        var imag=document.getElementById('mycam');-->
+<!--        imag.src="static/safe.png";-->
+
+<!--      }-->
+<!--      function start(){-->
+<!--        var imag=document.getElementById('mycam');-->
+<!--        imag.src="{{ url_for('videofootage_feed') }}";-->
+
+<!--      }-->
+<!--    </script>-->
+  </body>
